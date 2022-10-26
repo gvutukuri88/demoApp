@@ -62,7 +62,7 @@ thead td{
 tbody td{
     background:lightgray;
     border: white;
-    color: white;
+    /* color: rgb(10, 2, 2); */
     padding: 3px;  
     border: 1px solid white;
 }
