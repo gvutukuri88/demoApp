@@ -5,7 +5,7 @@
     padding: 24px;
     display: flex;
   border:1px solid black;
-  max-height: 1200px;
+  max-height: 800px;
   
 }
 .left_conatiner{
@@ -19,7 +19,7 @@
     display: flex;
 }
 .left_content{
-    max-height: 1200px;
+    max-height: 800px;
     border: 1px solid black;
 border-radius: 5px;
 text-align: center;
@@ -41,7 +41,7 @@ text-align: center;
 
 }
 .right_content{
-    max-height: 1200px;
+    max-height: 800px;
     border: 1px solid black;
     border-radius: 5px;
     overflow-y: scroll;

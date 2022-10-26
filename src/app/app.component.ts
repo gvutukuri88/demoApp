@@ -19,6 +19,7 @@ export class AppComponent implements OnInit  {
   Highcharts:any;
   chartOptions :any;
   stateArray:any=[];
+  population :any;
   constructor(private http :HttpClient, private datashare:DatasharingService ,private route :Router ){}
 
   ngOnInit(){
@@ -71,6 +72,7 @@ export class AppComponent implements OnInit  {
         }
         
       }
+      this.population=this.covidresponse[selectedState].meta.population
       console.log(this.selectedStateData)
       // selectedStateData.forEach((element :any)=> {
         
