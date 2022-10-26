@@ -1,0 +1,70 @@
+
+.main_container{
+    width: 100%;
+    margin: 20px;
+    padding: 24px;
+    display: flex;
+  border:1px solid black;
+  max-height: 1200px;
+  
+}
+.left_conatiner{
+    width: 25%;
+    
+}
+.right_container{
+    width: 75%;
+}
+.heading{
+    display: flex;
+}
+.left_content{
+    border: 1px solid black;
+border-radius: 5px;
+text-align: center;
+text-transform: uppercase;
+overflow-y: scroll;
+
+}
+.national_heading, .state_heading{
+    border: 1px solid black;
+border-radius: 5px;
+padding: 5px;
+width: 100%;
+text-align: center;
+}
+.inner_content{
+    border-bottom: 1px solid black;
+    background: lightgray;
+    color: #053c6d;
+
+}
+.right_content{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.table{
+    width: 100%;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    display: table;
+}
+thead td{
+    background: #053c6d;
+    border: white;
+    color: white;
+    padding: 3px;
+    border: 1px solid white;
+}
+tbody td{
+    background:lightgray;
+    border: white;
+    color: white;
+    padding: 3px;  
+    border: 1px solid white;
+}
+.scatter_style {
+    width: 500px;
+    height: 500px;
+}

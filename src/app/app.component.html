@@ -1,0 +1,56 @@
+
+
+<!-- <button type="button" (click)="navigate()">check</button> -->
+
+<div class="main_container">
+  <div class="left_conatiner">
+      <div class="heading">
+          <!-- <div class="national_heading"><b>NATIONAL VIEW</b> </div> -->
+          <div class="state_heading"><b>STATE-WISE VIEW</b> </div>
+      </div>
+
+      <div class="left_content" >
+          <div class="inner_content" *ngFor="let x of stateArray">
+              <div (click)="selected(x)"><b>{{x}}</b></div>
+          </div>
+      </div>
+  </div>
+  <div class="right_container">
+      <div class="right_content">
+          <p>Population:</p>
+          <div>
+              <table class="table">
+                  <thead>
+
+                      <tr>
+                          <td>District</td>
+                          <td>Confirmed</td>
+                          <td>Recovered</td>
+                          <td>Deaths</td>
+                          <td>Tested</td>
+                      </tr>
+
+                  </thead>
+                  <tbody *ngFor="let x of selectedStateData">
+                      
+                      <tr *ngIf="x">
+                          <td>{{x.name}}</td>
+                          <td>{{x.data.total.confirmed}}</td>
+                          <td>{{x.data.total.recovered}}</td>
+                          <td>{{x.data.total.deceased}}</td>
+                          <td>{{x.data.total.tested}}</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="scatter_style">
+              <highcharts-chart
+              [Highcharts] = "Highcharts" 
+              [options] = "chartOptions" 
+              style = "width: 100%; height: 400px; display: block;">
+           </highcharts-chart>
+             
+          </div>
+      </div>
+  </div>
+</div>
