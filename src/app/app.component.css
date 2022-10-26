@@ -1,6 +1,6 @@
 
 .main_container{
-    width: 100%;
+
     margin: 20px;
     padding: 24px;
     display: flex;
@@ -19,6 +19,7 @@
     display: flex;
 }
 .left_content{
+    max-height: 1200px;
     border: 1px solid black;
 border-radius: 5px;
 text-align: center;
@@ -40,6 +41,7 @@ text-align: center;
 
 }
 .right_content{
+    max-height: 1200px;
     border: 1px solid black;
     border-radius: 5px;
     overflow-y: scroll;
